@@ -1,24 +1,316 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Menlo.ttc">
+            <string>Menlo-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Euler" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="agS-g6-1Id">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="fQY-dp-IIU">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vgu-aU-I5d">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="SmG-IP-KgS">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="light"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqc-WA-xt0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="144"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </scrollView>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d87-ja-c4Z">
+                                <rect key="frame" x="40" y="455" width="90" height="90"/>
+                                <color key="backgroundColor" red="0.0" green="0.72156862749999995" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="DbU-1N-8xE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="28"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tpk-hY-jsE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGY-dg-JXj">
+                                <rect key="frame" x="15" y="159" width="56" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="uV6-eC-Z0y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYp-sp-e0W">
+                                <rect key="frame" x="142" y="455" width="90" height="90"/>
+                                <color key="backgroundColor" red="0.0" green="0.72156862749999995" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="28"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="twoPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ACg-pB-geE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAo-7g-99b">
+                                <rect key="frame" x="244" y="455" width="90" height="90"/>
+                                <color key="backgroundColor" red="0.0" green="0.72156862749999995" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="28"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="threePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zNz-ms-G7e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yn7-Gt-Sep">
+                                <rect key="frame" x="40" y="557" width="294" height="90"/>
+                                <color key="backgroundColor" red="0.0" green="0.72156862749999995" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="yJl-in-6fO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="28"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="zeroPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TkZ-Hg-DqY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qb-HA-HBg">
+                                <rect key="frame" x="40" y="353" width="90" height="90"/>
+                                <color key="backgroundColor" red="0.0" green="0.72156862749999995" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="3Yf-vN-dag"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="28"/>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="fourPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hWO-Hf-Utp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e10-6h-Ad9">
+                                <rect key="frame" x="142" y="353" width="90" height="90"/>
+                                <color key="backgroundColor" red="0.0" green="0.72156862749999995" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="28"/>
+                                <state key="normal" title="5">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="fivePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uuf-XK-hky"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esE-MP-JyG">
+                                <rect key="frame" x="244" y="353" width="90" height="90"/>
+                                <color key="backgroundColor" red="0.0" green="0.72156862749999995" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="28"/>
+                                <state key="normal" title="6">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="sixPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EUs-Rk-yeH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVE-Sl-33s">
+                                <rect key="frame" x="40" y="251" width="90" height="90"/>
+                                <color key="backgroundColor" red="0.0" green="0.72156862749999995" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="1yy-AO-gqw"/>
+                                    <constraint firstAttribute="height" constant="90" id="Tkw-iV-sza"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="28"/>
+                                <state key="normal" title="7">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="sevenPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lhm-3i-TG0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88u-nx-dut">
+                                <rect key="frame" x="142" y="251" width="90" height="90"/>
+                                <color key="backgroundColor" red="0.0" green="0.72156862749999995" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="28"/>
+                                <state key="normal" title="8">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="eightPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d6Z-rh-UUC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3m-NW-yqd">
+                                <rect key="frame" x="244" y="251" width="90" height="90"/>
+                                <color key="backgroundColor" red="0.0" green="0.72156862749999995" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="28"/>
+                                <state key="normal" title="9">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ninePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YqF-QU-9bC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.80784313730000001" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="K3m-NW-yqd" firstAttribute="trailing" secondItem="esE-MP-JyG" secondAttribute="trailing" id="1OK-uD-5DR"/>
+                            <constraint firstItem="uqc-WA-xt0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2cN-uN-lvj"/>
+                            <constraint firstItem="agS-g6-1Id" firstAttribute="trailing" secondItem="uqc-WA-xt0" secondAttribute="trailing" id="4Bv-fG-UMN"/>
+                            <constraint firstItem="d87-ja-c4Z" firstAttribute="top" secondItem="5qb-HA-HBg" secondAttribute="bottom" constant="12" id="4vp-NJ-c8n"/>
+                            <constraint firstItem="RVE-Sl-33s" firstAttribute="top" secondItem="88u-nx-dut" secondAttribute="top" id="6lm-gI-iWC"/>
+                            <constraint firstItem="5qb-HA-HBg" firstAttribute="top" secondItem="e10-6h-Ad9" secondAttribute="top" id="882-jV-1dt"/>
+                            <constraint firstAttribute="trailing" secondItem="uqc-WA-xt0" secondAttribute="trailing" id="8Nm-kO-VFe"/>
+                            <constraint firstItem="uqc-WA-xt0" firstAttribute="leading" secondItem="agS-g6-1Id" secondAttribute="leading" id="8nO-Qa-t8u"/>
+                            <constraint firstItem="uqc-WA-xt0" firstAttribute="centerX" secondItem="88u-nx-dut" secondAttribute="centerX" id="BKv-Gg-g9o"/>
+                            <constraint firstItem="d87-ja-c4Z" firstAttribute="baseline" secondItem="pYp-sp-e0W" secondAttribute="firstBaseline" id="BdC-7c-4Jo"/>
+                            <constraint firstItem="K3m-NW-yqd" firstAttribute="leading" secondItem="88u-nx-dut" secondAttribute="trailing" constant="12" id="EG9-LE-Z8F"/>
+                            <constraint firstItem="RVE-Sl-33s" firstAttribute="trailing" secondItem="5qb-HA-HBg" secondAttribute="trailing" id="GiV-c5-GSK"/>
+                            <constraint firstItem="e10-6h-Ad9" firstAttribute="trailing" secondItem="pYp-sp-e0W" secondAttribute="trailing" id="GyE-Pe-bqM"/>
+                            <constraint firstItem="esE-MP-JyG" firstAttribute="leading" secondItem="dAo-7g-99b" secondAttribute="leading" id="Ixd-Hq-TrA"/>
+                            <constraint firstItem="RVE-Sl-33s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="JOs-vU-fOT"/>
+                            <constraint firstItem="88u-nx-dut" firstAttribute="leading" secondItem="RVE-Sl-33s" secondAttribute="trailing" constant="12" id="JeZ-BM-hWr"/>
+                            <constraint firstItem="e10-6h-Ad9" firstAttribute="leading" secondItem="pYp-sp-e0W" secondAttribute="leading" id="L88-d2-ajh"/>
+                            <constraint firstItem="pYp-sp-e0W" firstAttribute="centerX" secondItem="Yn7-Gt-Sep" secondAttribute="centerX" id="Lfy-Cq-Ceg"/>
+                            <constraint firstItem="K3m-NW-yqd" firstAttribute="leading" secondItem="esE-MP-JyG" secondAttribute="leading" id="N2M-3A-GXU"/>
+                            <constraint firstItem="RVE-Sl-33s" firstAttribute="baseline" secondItem="88u-nx-dut" secondAttribute="firstBaseline" id="NKE-xf-J3J"/>
+                            <constraint firstItem="pYp-sp-e0W" firstAttribute="baseline" secondItem="dAo-7g-99b" secondAttribute="firstBaseline" id="Q7v-Go-dH1"/>
+                            <constraint firstItem="5qb-HA-HBg" firstAttribute="leading" secondItem="d87-ja-c4Z" secondAttribute="leading" id="U02-46-qRH"/>
+                            <constraint firstItem="RVE-Sl-33s" firstAttribute="leading" secondItem="5qb-HA-HBg" secondAttribute="leading" id="UMh-7w-fCu"/>
+                            <constraint firstItem="5qb-HA-HBg" firstAttribute="top" secondItem="RVE-Sl-33s" secondAttribute="bottom" constant="12" id="Vxa-p0-m0n"/>
+                            <constraint firstItem="88u-nx-dut" firstAttribute="leading" secondItem="e10-6h-Ad9" secondAttribute="leading" id="Zmh-fE-KFw"/>
+                            <constraint firstItem="dAo-7g-99b" firstAttribute="trailing" secondItem="Yn7-Gt-Sep" secondAttribute="trailing" id="aHp-FG-0pf"/>
+                            <constraint firstItem="pYp-sp-e0W" firstAttribute="top" secondItem="dAo-7g-99b" secondAttribute="top" id="bhh-I4-PRA"/>
+                            <constraint firstItem="VGY-dg-JXj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="c0J-Va-dIM"/>
+                            <constraint firstItem="Yn7-Gt-Sep" firstAttribute="top" secondItem="d87-ja-c4Z" secondAttribute="bottom" constant="12" id="cwd-Vm-mPb"/>
+                            <constraint firstItem="agS-g6-1Id" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dO5-h6-FKb"/>
+                            <constraint firstItem="e10-6h-Ad9" firstAttribute="top" secondItem="esE-MP-JyG" secondAttribute="top" id="dVg-ii-b6K"/>
+                            <constraint firstItem="VGY-dg-JXj" firstAttribute="top" secondItem="uqc-WA-xt0" secondAttribute="bottom" constant="15" id="doZ-I0-4T7"/>
+                            <constraint firstItem="uqc-WA-xt0" firstAttribute="top" secondItem="agS-g6-1Id" secondAttribute="top" id="fEt-ga-2lk"/>
+                            <constraint firstItem="88u-nx-dut" firstAttribute="trailing" secondItem="e10-6h-Ad9" secondAttribute="trailing" id="gfg-kH-bFx"/>
+                            <constraint firstItem="88u-nx-dut" firstAttribute="top" secondItem="K3m-NW-yqd" secondAttribute="top" id="kEJ-Mt-lPh"/>
+                            <constraint firstItem="esE-MP-JyG" firstAttribute="trailing" secondItem="dAo-7g-99b" secondAttribute="trailing" id="mSW-05-BhB"/>
+                            <constraint firstItem="e10-6h-Ad9" firstAttribute="baseline" secondItem="esE-MP-JyG" secondAttribute="firstBaseline" id="mj3-rs-xl3"/>
+                            <constraint firstItem="d87-ja-c4Z" firstAttribute="top" secondItem="pYp-sp-e0W" secondAttribute="top" id="pMb-aI-vLd"/>
+                            <constraint firstItem="5qb-HA-HBg" firstAttribute="trailing" secondItem="d87-ja-c4Z" secondAttribute="trailing" id="pfk-A7-QnL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VGY-dg-JXj" secondAttribute="trailing" constant="304" id="rCF-Ex-7by"/>
+                            <constraint firstItem="agS-g6-1Id" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="sI2-Xf-1mk"/>
+                            <constraint firstItem="RVE-Sl-33s" firstAttribute="top" secondItem="VGY-dg-JXj" secondAttribute="bottom" constant="68" id="uMw-ni-aO1"/>
+                            <constraint firstItem="5qb-HA-HBg" firstAttribute="baseline" secondItem="e10-6h-Ad9" secondAttribute="firstBaseline" id="xq9-gy-OUF"/>
+                            <constraint firstItem="88u-nx-dut" firstAttribute="baseline" secondItem="K3m-NW-yqd" secondAttribute="firstBaseline" id="y0t-8Z-cab"/>
+                            <constraint firstAttribute="bottom" secondItem="Yn7-Gt-Sep" secondAttribute="bottom" constant="20" symbolic="YES" id="yB9-tX-VVM"/>
+                            <constraint firstItem="d87-ja-c4Z" firstAttribute="leading" secondItem="Yn7-Gt-Sep" secondAttribute="leading" id="ykS-ge-xyh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="eulerScrollView" destination="uqc-WA-xt0" id="KGc-d3-0PK"/>
+                        <outlet property="gameOverView" destination="K0R-BE-62B" id="0BY-pL-UXw"/>
+                        <outlet property="highScoreLabel" destination="VGY-dg-JXj" id="sHi-6u-pfT"/>
+                        <outlet property="visualEffectView" destination="agS-g6-1Id" id="fSO-5B-wqN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="K0R-BE-62B">
+                    <rect key="frame" x="0.0" y="0.0" width="308" height="173"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Game Over" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sMt-Y3-Jhj">
+                            <rect key="frame" x="111" y="76" width="87" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BV6-qg-Wt7">
+                            <rect key="frame" x="122" y="123" width="64" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Try Again"/>
+                            <connections>
+                                <action selector="tryAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d6n-Fe-jET"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="0.85453345070422537" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <viewLayoutGuide key="safeArea" id="lR2-va-7S8"/>
+                </view>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>
