@@ -18,6 +18,9 @@ class ViewController: UIViewController {
     @IBOutlet var gameOverView: UIView!
     @IBOutlet var visualEffectView: UIVisualEffectView!
     @IBAction func tryAgain(_ sender: Any) {
+        eulerPosition = 1
+        displayStr = "2."
+        redrawScroll()
         animateOut()
     }
     
@@ -199,6 +202,10 @@ class ViewController: UIViewController {
         
         eulerScrollView.contentSize = CGSize(width: strSize.width, height: strSize.height)
         // TODO: - Implement autoscroll
+        if strSize.width >= self.view.bounds.width {
+            let endOffset = CGPoint(x: eulerScrollView.contentSize.width - eulerScrollView.bounds.size.width + numericHeader.frame.height - strSize.height, y: 0)
+            eulerScrollView.setContentOffset(endOffset, animated: true)
+        }
     }
     
     func defeatUser() {
