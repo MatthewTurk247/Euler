@@ -16,10 +16,15 @@ class ViewController: UIViewController {
     var numericHeader = UITextView()
     var eulerPosition = 1
     @IBOutlet var gameOverView: UIView!
+    @IBOutlet var digitsLabel: UILabel!
+    @IBOutlet var sentenceEnd: UILabel!
     @IBOutlet var visualEffectView: UIVisualEffectView!
     @IBAction func tryAgain(_ sender: Any) {
         eulerPosition = 1
         displayStr = "2."
+        if UserDefaults.standard.integer(forKey: "highScore") != 0 {
+            highScoreLabel.text = String(UserDefaults.standard.integer(forKey: "highScore"))
+        }
         redrawScroll()
         animateOut()
     }
@@ -30,93 +35,93 @@ class ViewController: UIViewController {
     @IBOutlet var highScoreLabel: UILabel!
     
     @IBAction func zeroPressed(_ sender: Any) {
+        validate(input: "0")
         eulerPosition += 1
         displayStr += "0"
         numericHeader.text = numericHeader.text + "0"
         print(numericHeader.text)
         redrawScroll()
-        validate(input: "0")
     }
     
     @IBAction func onePressed(_ sender: Any) {
+        validate(input: "1")
         eulerPosition += 1
         displayStr += "1"
         numericHeader.text = numericHeader.text + "1"
         print(numericHeader.text)
         redrawScroll()
-        validate(input: "1")
     }
     
     @IBAction func twoPressed(_ sender: Any) {
+        validate(input: "2")
         eulerPosition += 1
         displayStr += "2"
         numericHeader.text = numericHeader.text + "2"
         print(numericHeader.text)
         redrawScroll()
-        validate(input: "2")
     }
     
     @IBAction func threePressed(_ sender: Any) {
+        validate(input: "3")
         eulerPosition += 1
         displayStr += "3"
         numericHeader.text = numericHeader.text + "3"
         print(numericHeader.text)
         redrawScroll()
-        validate(input: "3")
     }
     
     @IBAction func fourPressed(_ sender: Any) {
+        validate(input: "4")
         eulerPosition += 1
         displayStr += "4"
         numericHeader.text = numericHeader.text + "4"
         print(numericHeader.text)
         redrawScroll()
-        validate(input: "4")
     }
     
     @IBAction func fivePressed(_ sender: Any) {
+        validate(input: "5")
         eulerPosition += 1
         displayStr += "5"
         numericHeader.text = numericHeader.text + "5"
         print(numericHeader.text)
         redrawScroll()
-        validate(input: "5")
     }
     
     @IBAction func sixPressed(_ sender: Any) {
+        validate(input: "6")
         eulerPosition += 1
         displayStr += "6"
         numericHeader.text = numericHeader.text + "6"
         print(numericHeader.text)
         redrawScroll()
-        validate(input: "6")
     }
     
     @IBAction func sevenPressed(_ sender: Any) {
+        validate(input: "7")
         eulerPosition += 1
         displayStr += "7"
         numericHeader.text = numericHeader.text + "7"
         print(numericHeader.text)
         redrawScroll()
-        validate(input: "7")
     }
     
     @IBAction func eightPressed(_ sender: Any) {
+        validate(input: "8")
         eulerPosition += 1
         displayStr += "8"
         numericHeader.text = numericHeader.text + "8"
         print(numericHeader.text)
         redrawScroll()
-        validate(input: "8")
     }
     
     @IBAction func ninePressed(_ sender: Any) {
+        validate(input: "9")
         eulerPosition += 1
         displayStr += "9"
         numericHeader.text = numericHeader.text + "9"
         print(numericHeader.text)
         redrawScroll()
-        validate(input: "9")
     }
     
     override func viewDidLoad() {
@@ -156,11 +161,11 @@ class ViewController: UIViewController {
     }
 
     func validate(input: String) {
-        print("We are the sensory organs of the universe.")
-        print(e[eulerPosition])
-        print(input)
-        print(String(e[eulerPosition]) == input)
-        if String(e[eulerPosition]) != input {
+//        print("We are the sensory organs of the universe.")
+//        print(e[eulerPosition + 1])
+//        print(input)
+//        print(String(e[eulerPosition + 1]) == input)
+        if String(e[eulerPosition + 1]) != input {
             defeatUser()
         }
     }
@@ -211,7 +216,10 @@ class ViewController: UIViewController {
     func defeatUser() {
         // present game over screen with options and stuff and set high score
         animateIn()
-        UserDefaults.standard.set(eulerPosition, forKey: "highScore")
+        UserDefaults.standard.set(eulerPosition - 1, forKey: "highScore")
+        digitsLabel.text = String(eulerPosition - 1)
+        sentenceEnd.text = eulerPosition - 1 != 1 ? "digits" : "digit"
+        
     }
 
 }
