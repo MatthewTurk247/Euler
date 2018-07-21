@@ -227,6 +227,13 @@
                                     <action selector="ninePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YqF-QU-9bC"/>
                                 </connections>
                             </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="apk-WW-nuR" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="zIW-jg-XgW"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.80784313730000001" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -247,6 +254,7 @@
                             <constraint firstItem="RVE-Sl-33s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="JOs-vU-fOT"/>
                             <constraint firstItem="88u-nx-dut" firstAttribute="leading" secondItem="RVE-Sl-33s" secondAttribute="trailing" constant="12" id="JeZ-BM-hWr"/>
                             <constraint firstItem="e10-6h-Ad9" firstAttribute="leading" secondItem="pYp-sp-e0W" secondAttribute="leading" id="L88-d2-ajh"/>
+                            <constraint firstItem="apk-WW-nuR" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="LR3-xI-1gh"/>
                             <constraint firstItem="pYp-sp-e0W" firstAttribute="centerX" secondItem="Yn7-Gt-Sep" secondAttribute="centerX" id="Lfy-Cq-Ceg"/>
                             <constraint firstItem="K3m-NW-yqd" firstAttribute="leading" secondItem="esE-MP-JyG" secondAttribute="leading" id="N2M-3A-GXU"/>
                             <constraint firstItem="RVE-Sl-33s" firstAttribute="baseline" secondItem="88u-nx-dut" secondAttribute="firstBaseline" id="NKE-xf-J3J"/>
@@ -269,8 +277,10 @@
                             <constraint firstItem="e10-6h-Ad9" firstAttribute="baseline" secondItem="esE-MP-JyG" secondAttribute="firstBaseline" id="mj3-rs-xl3"/>
                             <constraint firstItem="d87-ja-c4Z" firstAttribute="top" secondItem="pYp-sp-e0W" secondAttribute="top" id="pMb-aI-vLd"/>
                             <constraint firstItem="5qb-HA-HBg" firstAttribute="trailing" secondItem="d87-ja-c4Z" secondAttribute="trailing" id="pfk-A7-QnL"/>
+                            <constraint firstItem="apk-WW-nuR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qSR-61-TLH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VGY-dg-JXj" secondAttribute="trailing" constant="304" id="rCF-Ex-7by"/>
                             <constraint firstItem="agS-g6-1Id" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="sI2-Xf-1mk"/>
+                            <constraint firstItem="apk-WW-nuR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ttC-K5-R75"/>
                             <constraint firstItem="RVE-Sl-33s" firstAttribute="top" secondItem="VGY-dg-JXj" secondAttribute="bottom" constant="68" id="uMw-ni-aO1"/>
                             <constraint firstItem="5qb-HA-HBg" firstAttribute="baseline" secondItem="e10-6h-Ad9" secondAttribute="firstBaseline" id="xq9-gy-OUF"/>
                             <constraint firstItem="88u-nx-dut" firstAttribute="baseline" secondItem="K3m-NW-yqd" secondAttribute="firstBaseline" id="y0t-8Z-cab"/>
@@ -280,6 +290,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="bannerView" destination="apk-WW-nuR" id="I0a-1f-d2S"/>
                         <outlet property="digitsLabel" destination="00a-kN-2hS" id="35Y-rV-wel"/>
                         <outlet property="eulerScrollView" destination="uqc-WA-xt0" id="KGc-d3-0PK"/>
                         <outlet property="gameOverView" destination="K0R-BE-62B" id="0BY-pL-UXw"/>

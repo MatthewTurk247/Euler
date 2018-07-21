@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		039E8E5135A2FFF9D39BA424 /* Pods_EulerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508BDF8CC9DCF8BEC602995F /* Pods_EulerUITests.framework */; };
 		B2319E9120D474B000C86869 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2319E9020D474B000C86869 /* AppDelegate.swift */; };
 		B2319E9320D474B000C86869 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2319E9220D474B000C86869 /* ViewController.swift */; };
 		B2319E9620D474B100C86869 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2319E9420D474B100C86869 /* Main.storyboard */; };
@@ -14,6 +15,9 @@
 		B2319E9B20D474B100C86869 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2319E9920D474B100C86869 /* LaunchScreen.storyboard */; };
 		B2319EA620D474B100C86869 /* EulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2319EA520D474B100C86869 /* EulerTests.swift */; };
 		B2319EB120D474B100C86869 /* EulerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2319EB020D474B100C86869 /* EulerUITests.swift */; };
+		B29EA1DC20FF00C9002062ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B29EA1DB20FF00C9002062ED /* GoogleService-Info.plist */; };
+		DCFBD14210815E5268C6FADB /* Pods_Euler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839B5BC13472DE0612866980 /* Pods_Euler.framework */; };
+		F50F061E0DB89223FB5DD599 /* Pods_EulerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4F896D1913ED90CF975541 /* Pods_EulerTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18C7E8F633FAD3E1769848C0 /* Pods-EulerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EulerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EulerUITests/Pods-EulerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2BC4CA918244688EAB03C408 /* Pods-EulerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EulerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EulerTests/Pods-EulerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4A4F896D1913ED90CF975541 /* Pods_EulerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EulerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		508BDF8CC9DCF8BEC602995F /* Pods_EulerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EulerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D0F15C18F58D41D3D64E3B3 /* Pods-EulerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EulerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EulerUITests/Pods-EulerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		839B5BC13472DE0612866980 /* Pods_Euler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Euler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8866134EA594E825776E32BA /* Pods-EulerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EulerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EulerTests/Pods-EulerTests.release.xcconfig"; sourceTree = "<group>"; };
 		B2319E8D20D474B000C86869 /* Euler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Euler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2319E9020D474B000C86869 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2319E9220D474B000C86869 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +58,9 @@
 		B2319EAC20D474B100C86869 /* EulerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EulerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2319EB020D474B100C86869 /* EulerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EulerUITests.swift; sourceTree = "<group>"; };
 		B2319EB220D474B100C86869 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B29EA1DB20FF00C9002062ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ED2A943EA5AD037C1F8C442F /* Pods-Euler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Euler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Euler/Pods-Euler.debug.xcconfig"; sourceTree = "<group>"; };
+		F14F5EE1B51B0A61CEC91D7E /* Pods-Euler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Euler.release.xcconfig"; path = "Pods/Target Support Files/Pods-Euler/Pods-Euler.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCFBD14210815E5268C6FADB /* Pods_Euler.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F50F061E0DB89223FB5DD599 /* Pods_EulerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				039E8E5135A2FFF9D39BA424 /* Pods_EulerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +98,8 @@
 				B2319EA420D474B100C86869 /* EulerTests */,
 				B2319EAF20D474B100C86869 /* EulerUITests */,
 				B2319E8E20D474B000C86869 /* Products */,
+				ECDB1FFB723A6EFACE272D28 /* Pods */,
+				CCE66A45EF9BCC19ACF90108 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +122,7 @@
 				B2319E9720D474B100C86869 /* Assets.xcassets */,
 				B2319E9920D474B100C86869 /* LaunchScreen.storyboard */,
 				B2319E9C20D474B100C86869 /* Info.plist */,
+				B29EA1DB20FF00C9002062ED /* GoogleService-Info.plist */,
 			);
 			path = Euler;
 			sourceTree = "<group>";
@@ -125,6 +145,29 @@
 			path = EulerUITests;
 			sourceTree = "<group>";
 		};
+		CCE66A45EF9BCC19ACF90108 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				839B5BC13472DE0612866980 /* Pods_Euler.framework */,
+				4A4F896D1913ED90CF975541 /* Pods_EulerTests.framework */,
+				508BDF8CC9DCF8BEC602995F /* Pods_EulerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECDB1FFB723A6EFACE272D28 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED2A943EA5AD037C1F8C442F /* Pods-Euler.debug.xcconfig */,
+				F14F5EE1B51B0A61CEC91D7E /* Pods-Euler.release.xcconfig */,
+				2BC4CA918244688EAB03C408 /* Pods-EulerTests.debug.xcconfig */,
+				8866134EA594E825776E32BA /* Pods-EulerTests.release.xcconfig */,
+				7D0F15C18F58D41D3D64E3B3 /* Pods-EulerUITests.debug.xcconfig */,
+				18C7E8F633FAD3E1769848C0 /* Pods-EulerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2319EB520D474B100C86869 /* Build configuration list for PBXNativeTarget "Euler" */;
 			buildPhases = (
+				A296CEAF4F777347F40B16E0 /* [CP] Check Pods Manifest.lock */,
 				B2319E8920D474B000C86869 /* Sources */,
 				B2319E8A20D474B000C86869 /* Frameworks */,
 				B2319E8B20D474B000C86869 /* Resources */,
+				9D3BC900B2DF98238E74FA77 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2319EB820D474B100C86869 /* Build configuration list for PBXNativeTarget "EulerTests" */;
 			buildPhases = (
+				5EA831D6757A5D8E70BDE5EB /* [CP] Check Pods Manifest.lock */,
 				B2319E9D20D474B100C86869 /* Sources */,
 				B2319E9E20D474B100C86869 /* Frameworks */,
 				B2319E9F20D474B100C86869 /* Resources */,
@@ -167,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2319EBB20D474B100C86869 /* Build configuration list for PBXNativeTarget "EulerUITests" */;
 			buildPhases = (
+				3BF76EF19E1DD33442220FF9 /* [CP] Check Pods Manifest.lock */,
 				B2319EA820D474B100C86869 /* Sources */,
 				B2319EA920D474B100C86869 /* Frameworks */,
 				B2319EAA20D474B100C86869 /* Resources */,
@@ -233,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2319E9B20D474B100C86869 /* LaunchScreen.storyboard in Resources */,
+				B29EA1DC20FF00C9002062ED /* GoogleService-Info.plist in Resources */,
 				B2319E9820D474B100C86869 /* Assets.xcassets in Resources */,
 				B2319E9620D474B100C86869 /* Main.storyboard in Resources */,
 			);
@@ -253,6 +301,83 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3BF76EF19E1DD33442220FF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EulerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EA831D6757A5D8E70BDE5EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EulerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D3BC900B2DF98238E74FA77 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Euler/Pods-Euler-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Euler/Pods-Euler-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A296CEAF4F777347F40B16E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Euler-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B2319E8920D474B000C86869 /* Sources */ = {
@@ -424,6 +549,7 @@
 		};
 		B2319EB620D474B100C86869 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED2A943EA5AD037C1F8C442F /* Pods-Euler.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,6 +565,7 @@
 		};
 		B2319EB720D474B100C86869 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F14F5EE1B51B0A61CEC91D7E /* Pods-Euler.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +581,7 @@
 		};
 		B2319EB920D474B100C86869 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BC4CA918244688EAB03C408 /* Pods-EulerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +599,7 @@
 		};
 		B2319EBA20D474B100C86869 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8866134EA594E825776E32BA /* Pods-EulerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +617,7 @@
 		};
 		B2319EBC20D474B100C86869 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D0F15C18F58D41D3D64E3B3 /* Pods-EulerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +634,7 @@
 		};
 		B2319EBD20D474B100C86869 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18C7E8F633FAD3E1769848C0 /* Pods-EulerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
